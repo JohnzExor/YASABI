@@ -6,6 +6,12 @@ const CaseStudies = () => {
     <div
       className=" flex flex-col items-center justify-center h-fit p-4 border-b-2 gap-20 md:h-screen"
       id="caseStudies"
+      style={{
+        backgroundImage: `url(${background2})`,
+        backgroundPosition: "center",
+        backgroundSize: "65em",
+        backgroundRepeat: "no-repeat",
+      }}
     >
       <div className=" flex flex-col items-center md:gap-10">
         <h1 className=" text-5xl font-medium ">Case Studies</h1>
@@ -54,7 +60,6 @@ const CaseStudies = () => {
           </div>
         </div>
       </div>
-      <img src={background2} className=" absolute -z-10 " />
     </div>
   );
 };
