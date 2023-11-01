@@ -3,7 +3,7 @@ import background2 from "@/assets/background4.svg";
 import { Button } from "@/components/ui/button";
 
 import { Link } from "react-router-dom";
-import { Data } from "@/store/Data";
+import { TeamData } from "@/store/Data";
 
 const Team = () => {
   return (
@@ -19,7 +19,7 @@ const Team = () => {
     >
       <h1 className=" text-5xl font-bold">Our Team</h1>
       <div className=" grid grid-cols-2 gap-2 md:grid-cols-4 text-sm">
-        {Data.map((data, index) => (
+        {TeamData.map((data, index) => (
           <div
             key={index}
             className="text-center border rounded-md backdrop-blur-md md:w-52"
