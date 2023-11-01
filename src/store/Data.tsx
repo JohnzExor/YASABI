@@ -8,22 +8,30 @@ export const TeamData = [
     id: 1,
     picture: johnzyll,
     name: "Johnzyll Jimeno",
-    about:
-      "TypeScript extends JavaScript and improves the developer experience. It enables developers to add type safety to their projects. Moreover, TypeScript provides various other features, like interfaces, type aliases, abstract classes, function overloading, tuple, generics, etc.",
+    about: `TypeScript extends JavaScript and improves the developer experience. It enables developers to add type safety 
+      to their projects. Moreover, TypeScript provides various other features, like interfaces, type aliases, 
+      abstract classes, function overloading, tuple, generics, etc.`,
   },
   {
     id: 2,
     picture: emman,
     name: "Emmanuel Cari-an",
     about: `Greetings! I'm passionate about coding and creating digital experiences. Here's a bit about me.
-      I thrive in the world of Python development. With a keen eye for detail and a love for problem-solving, I enjoy crafting efficient and effective solutions using this versatile language. When automating tasks Python is my go-to tool in the development arsenal. 
-      Recently, I've embarked on an exciting journey into the realms of HTML and CSS. It's been an eye-opening experience to dive into the foundations of web development. I'm eager to refine my skills in crafting visually appealing and user-friendly interfaces, and I'm looking forward to the creative opportunities this skillset will unlock.`,
+      I thrive in the world of Python development. With a keen eye for detail and a love for problem-solving, 
+      I enjoy crafting efficient and effective solutions using this versatile language. When automating tasks 
+      Python is my go-to tool in the development arsenal. Recently, I've embarked on an exciting journey into 
+      the realms of HTML and CSS. It's been an eye-opening experience to dive into the foundations of web 
+      development. I'm eager to refine my skills in crafting visually appealing and user-friendly interfaces, 
+      and I'm looking forward to the creative opportunities this skillset will unlock.`,
   },
   {
     id: 3,
     picture: francis,
     name: "Francis Poliran",
-    about: "",
+    about: `Designer with a passion for crafting seamless user experiences. With a background in UI and UX design, 
+    I bring creativity and technical expertise to every project I undertake. Whether it's creating visually stunning 
+    interfaces or optimizing user journeys, I thrive on turning concepts into compelling digital experiences. i am 
+    eager to hone my skills to bring my vision to life!"`,
   },
   {
     id: 4,

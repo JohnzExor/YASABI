@@ -6,7 +6,7 @@ import { Link, useParams } from "react-router-dom";
 const CaseStudy = () => {
   const { id } = useParams();
   return (
-    <div className=" flex flex-col p-2 h-screen absolute w-full backdrop-blur-3xl z-10 overflow-y-scroll gap-4 md:p-40">
+    <div className=" flex flex-col p-6 h-screen absolute w-full backdrop-blur-3xl z-10 overflow-y-scroll gap-4 md:px-40 md:pt-32">
       <Link to={`/portfolio/${id}`} className="text-sm">
         <Button className=" w-fit dark:bg-transparent dark:text-white dark:border-white border flex items-center">
           <MdArrowBackIosNew size={20} />

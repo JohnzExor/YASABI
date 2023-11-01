@@ -1,5 +1,6 @@
-import background3 from "@/assets/background3.svg";
+import background3 from "@/assets/backgrounds/background3.svg";
 import { Button } from "@/components/ui/button";
+import { easeInOut, motion } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -9,8 +10,18 @@ const Contact = () => {
     >
       <img src={background3} className=" absolute md:relative md:80 -z-10" />
       <div>
-        <h1 className=" text-6xl">Contact Us</h1>
-        <form className=" w-80 backdrop-blur-md p-2 rounded-md space-y-4">
+        <motion.h1
+          className=" text-6xl"
+          whileInView={{ y: [200, 200, 0] }}
+          transition={{ duration: 2, ease: easeInOut }}
+        >
+          Contact Us
+        </motion.h1>
+        <motion.form
+          className=" w-80 backdrop-blur-md p-2 rounded-md space-y-4"
+          whileInView={{ opacity: [0, 1] }}
+          transition={{ duration: 2, delay: 2 }}
+        >
           <input
             type="text"
             placeholder="Enter your email address"
@@ -23,7 +34,7 @@ const Contact = () => {
           <Button className=" w-full dark:bg-slate-900 dark:text-white">
             Submit
           </Button>
-        </form>
+        </motion.form>
       </div>
     </div>
   );

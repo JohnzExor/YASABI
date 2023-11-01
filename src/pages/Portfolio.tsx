@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 
 import { MdArrowBackIosNew } from "react-icons/md";
 import { Button } from "@/components/ui/button";
+import { FiDownload } from "react-icons/fi";
 
 import {
   Accordion,
@@ -24,7 +25,7 @@ const Portfolio = () => {
 
   return (
     <div
-      className=" flex flex-col p-2 h-screen absolute w-full backdrop-blur-3xl z-10 overflow-y-scroll gap-4 md:p-40"
+      className=" flex flex-col p-6 h-screen absolute w-full backdrop-blur-3xl z-10 overflow-y-scroll gap-4 md:px-40 md:pt-32 md:pb-4"
       ref={divRef}
       tabIndex={0}
     >
@@ -44,7 +45,8 @@ const Portfolio = () => {
                   <>
                     <h1 className=" font-semibold mt-2">About me</h1>
                     <p className=" text-sm">{data.about}</p>
-                    <Button className=" w-fit mt-4 dark:bg-transparent dark:text-white dark:border-white border">
+                    <Button className=" w-fit mt-4 dark:bg-transparent dark:text-white dark:border-white border flex gap-2 items-center">
+                      <FiDownload />
                       Download Curriculum Vitae
                     </Button>
                   </>
@@ -64,7 +66,7 @@ const Portfolio = () => {
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col">
                       <p>{data.summary}</p>
-                      <Link to={`/portfolio/${id}/casestudy/${id}`}>
+                      <Link to={`/portfolio/casestudy/${id}`}>
                         <Button className=" w-fit mt-4 dark:bg-transparent dark:text-white dark:border-white border">
                           See More
                         </Button>
