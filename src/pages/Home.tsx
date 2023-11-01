@@ -1,15 +1,15 @@
 import { Outlet } from "react-router-dom";
 import About from "./About";
-import CaseStudies from "./CaseStudies";
 import Contact from "./Contact";
+import Team from "./Team";
 
 const Home = () => {
   return (
     <div>
       <About />
-      <CaseStudies />
-      <Contact />
       <Outlet />
+      <Team />
+      <Contact />
     </div>
   );
 };

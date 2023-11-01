@@ -11,7 +11,7 @@ const About = () => {
         </div>
         <div className="flex gap-2 items-center mt-2">
           <Button className=" dark:bg-slate-900 dark:text-white">
-            <a href="#caseStudies">Case Studies</a>
+            <a href="#team">Our Team</a>
           </Button>
           <Button className="dark:bg-slate-900 dark:text-white">
             <a href="#contact">Contact Us</a>
