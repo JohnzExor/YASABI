@@ -73,7 +73,7 @@ const Header = () => {
           <SheetTrigger className=" md:hidden">
             <FaBarsStaggered size={30} />
           </SheetTrigger>
-          <SheetContent>
+          <SheetContent className="">
             <SheetHeader>
               <SheetTitle className=" flex items-center">
                 <img src={icon} />

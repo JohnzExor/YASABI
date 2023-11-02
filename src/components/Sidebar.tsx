@@ -5,18 +5,30 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 const Sidebar = () => {
   return (
     <ScrollArea className="h-screen pb-40">
-      <h1 className="font-bold text-2xl pb-2">Portfolios</h1>
-      {TeamData.map((data, index) => (
-        <div key={index} className="text-left mb-2 border-t-2 py-2">
-          <Link to={`/portfolio/${data.id}`}>{data.name}</Link>
-        </div>
-      ))}
-      <h1 className="font-bold text-2xl pb-2">Case Studies</h1>
-      {CaseStudyData.map((data, index) => (
-        <div key={index} className="text-left mb-2 border-t-2 py-2">
-          <Link to={`/portfolio/${data.id}`}>{data.title}</Link>
-        </div>
-      ))}
+      <div className=" flex flex-col text-left gap-2">
+        <h1 className="font-bold text-2xl">Portfolios</h1>
+        {TeamData.map((data, index) => (
+          <Link
+            key={index}
+            to={`/portfolio/${data.id}`}
+            className=" border-b pb-2"
+          >
+            {data.name}
+          </Link>
+        ))}
+      </div>
+      <div className=" flex flex-col text-left gap-2 mt-4">
+        <h1 className="font-bold text-2xl">Case Studies</h1>
+        {CaseStudyData.map((data, index) => (
+          <Link
+            key={index}
+            to={`/portfolio/casestudy/${data.id}`}
+            className=" border-b pb-2"
+          >
+            {data.title}
+          </Link>
+        ))}
+      </div>
     </ScrollArea>
   );
 };
