@@ -19,8 +19,8 @@ const Contact = () => {
         </motion.h1>
         <motion.form
           className=" w-80 backdrop-blur-md p-2 rounded-md space-y-4"
-          whileInView={{ opacity: [0, 1] }}
-          transition={{ duration: 2, delay: 2 }}
+          whileInView={{ opacity: [0, 1], y: [-10, 0] }}
+          transition={{ duration: 1, delay: 2 }}
         >
           <input
             type="text"

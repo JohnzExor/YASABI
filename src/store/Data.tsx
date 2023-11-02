@@ -3,6 +3,12 @@ import emman from "@/assets/profiles/emman.jpg";
 import francis from "@/assets/profiles/francis.jpg";
 import gideon from "@/assets/profiles/gideon.jpg";
 
+import customerJourneyMapping from "@/assets/pictures/johnzyll/customerJourneyMapping.png";
+import userflow from "@/assets/pictures/johnzyll/userFlow.png";
+import visualUIDesign from "@/assets/pictures/johnzyll/visualUIDesign.png";
+import storyBoard from "@/assets/pictures/johnzyll/storyBoard.png";
+import johnzyllFile from "@/assets/files/johnzyll.pdf";
+
 export const TeamData = [
   {
     id: 1,
@@ -44,6 +50,7 @@ export const TeamData = [
 export const CaseStudyData = [
   {
     id: 1,
+    file: johnzyllFile,
     title: `Implementation of a Comprehensive Driver Behavior Reporting System for Transportation Industry.`,
     projectType: `The objective of this project is to create an extensive system that tracks and provides insights 
       into the conduct of motorists in the Philippines. This system will encompass multiple facets of driver behavior, 
@@ -66,6 +73,11 @@ export const CaseStudyData = [
       to build a comprehensive platform that allows users to report incidents, enforce traffic laws, and promote safer roads. Through 
       this project, I hope to demonstrate my UI/UX design and development skills while also significantly improving road safety in the 
       Philippines.`,
+    customerJourneyMapping: customerJourneyMapping,
+    storyBoard: storyBoard,
+    userflow: userflow,
+    visualUIDesign: visualUIDesign,
+    prototype: "sdafdsafafdsfsad",
   },
   {
     id: 2,

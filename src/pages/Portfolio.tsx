@@ -21,7 +21,7 @@ const Portfolio = () => {
     if (divRef.current) {
       divRef.current.focus();
     }
-  }, []);
+  }, [id]);
 
   return (
     <div
