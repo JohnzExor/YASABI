@@ -43,8 +43,8 @@ const Portfolio = () => {
                 <h1 className="text-6xl font-bold ">{data.name}</h1>
                 {data.about && (
                   <>
-                    <h1 className=" font-semibold mt-2">About me</h1>
-                    <p className=" text-sm">{data.about}</p>
+                    <h1 className=" font-semibold text-lg mt-2">About me</h1>
+                    <p>{data.about}</p>
                     <Button className=" w-fit mt-4 dark:bg-transparent dark:text-white dark:border-white border flex gap-2 items-center">
                       <FiDownload />
                       Download Curriculum Vitae

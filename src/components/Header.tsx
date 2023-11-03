@@ -76,12 +76,12 @@ const Header = () => {
           <SheetContent className="">
             <SheetHeader>
               <SheetTitle className=" flex items-center">
-                <img src={icon} />
+                <img src={icon} className="w-10" />
                 YASABI
               </SheetTitle>
               <SheetDescription>Group Portfolio for UI/UX</SheetDescription>
-              <Sidebar />
             </SheetHeader>
+            <Sidebar />
           </SheetContent>
         </Sheet>
       </div>

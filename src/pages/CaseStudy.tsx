@@ -32,8 +32,8 @@ const CaseStudy = () => {
             <div className=" flex flex-col gap-4 md:flex-row" key={index}>
               <div className=" md:w-96">
                 <h1 className="text-4xl font-bold ">{data.title}</h1>
-                <h1 className="font-semibold mt-2">Summary</h1>
-                <p className=" text-sm">{data.summary}</p>
+                <h1 className="font-semibold mt-2 text-lg">Summary</h1>
+                <p>{data.summary}</p>
                 <Button className=" w-fit mt-4 dark:bg-transparent dark:text-white dark:border-white border flex gap-2 items-center">
                   <FiDownload />
                   Download Case Study
@@ -41,16 +41,26 @@ const CaseStudy = () => {
               </div>
               <ScrollArea className="md:w-3/4 p-2 h-screen gap-4">
                 <em className="text-sm text-gray-500">*Scroll Here</em>
-                <h1 className="font-bold">Customer Journey Mapping</h1>
+                <h1 className="font-bold text-lg">Customer Journey Mapping</h1>
                 <img src={data.customerJourneyMapping} className=" w-full" />
-                <h1 className="font-bold">Storyboards</h1>
-                <img src={data.storyBoard} className="w-full" />
-                <h1 className="font-bold">User Flow</h1>
+                <h1 className="font-bold text-lg">User Flow</h1>
                 <img src={data.userflow} className="w-full" />
-                <h1 className="font-bold">Visual UI Design</h1>
+                <h1 className="font-bold text-lg">Visual UI Design</h1>
                 <img src={data.visualUIDesign} className="w-full" />
-                <h1 className="font-bold">Prototype</h1>
-                <p>{data.prototype}</p>
+                <h1 className="font-bold text-lg">Prototype</h1>
+                <p>{data.prototypeDescription}</p>
+                {data.prototypeType === 1 && (
+                  <a
+                    className=" underline"
+                    href={data.prototype}
+                    target="_blank"
+                  >
+                    {data.prototype}
+                  </a>
+                )}
+                {data.prototypeType === 2 && (
+                  <img src={data.prototype} className="w-full" />
+                )}
               </ScrollArea>
             </div>
           )

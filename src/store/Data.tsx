@@ -3,11 +3,15 @@ import emman from "@/assets/profiles/emman.jpg";
 import francis from "@/assets/profiles/francis.jpg";
 import gideon from "@/assets/profiles/gideon.jpg";
 
-import customerJourneyMapping from "@/assets/pictures/johnzyll/customerJourneyMapping.png";
-import userflow from "@/assets/pictures/johnzyll/userFlow.png";
-import visualUIDesign from "@/assets/pictures/johnzyll/visualUIDesign.png";
-import storyBoard from "@/assets/pictures/johnzyll/storyBoard.png";
+import johnzyllCustomerJourneyMapping from "@/assets/pictures/johnzyll/customerJourneyMapping.png";
+import johnzyllUserFlow from "@/assets/pictures/johnzyll/userFlow.png";
+import johnzyllVisualUIDesign from "@/assets/pictures/johnzyll/visualUIDesign.png";
 import johnzyllFile from "@/assets/files/johnzyll.pdf";
+
+import emmanCustomerJourneyMapping from "@/assets/pictures/emman/customerJourneyMapping.png";
+import emmanUserFlow from "@/assets/pictures/emman/userFlow.png";
+import emmanVisualUIDesign from "@/assets/pictures/emman/visualUIDesign.png";
+import emmanPrototype from "@/assets/pictures/emman/prototype.png";
 
 export const TeamData = [
   {
@@ -73,11 +77,12 @@ export const CaseStudyData = [
       to build a comprehensive platform that allows users to report incidents, enforce traffic laws, and promote safer roads. Through 
       this project, I hope to demonstrate my UI/UX design and development skills while also significantly improving road safety in the 
       Philippines.`,
-    customerJourneyMapping: customerJourneyMapping,
-    storyBoard: storyBoard,
-    userflow: userflow,
-    visualUIDesign: visualUIDesign,
-    prototype: "sdafdsafafdsfsad",
+    customerJourneyMapping: johnzyllCustomerJourneyMapping,
+    userflow: johnzyllUserFlow,
+    visualUIDesign: johnzyllVisualUIDesign,
+    prototypeType: 1,
+    prototypeDescription: "You can find it here",
+    prototype: "https://cdbrs-system.web.app/",
   },
   {
     id: 2,
@@ -87,6 +92,12 @@ export const CaseStudyData = [
       where resources are because of the unfamiliar platform and confusing. The improvement and redesign of the interface can improve 
       the overall user experience when using the product.  Redundancies exist in the product and the goal is to reduce if not remove 
       it completely.`,
+    customerJourneyMapping: emmanCustomerJourneyMapping,
+    userflow: emmanUserFlow,
+    visualUIDesign: emmanVisualUIDesign,
+    prototypeType: 2,
+    prototypeDescription: "Prototype pictures",
+    prototype: emmanPrototype,
   },
   {
     id: 3,
