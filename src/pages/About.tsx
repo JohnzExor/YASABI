@@ -28,7 +28,7 @@ const About = () => {
           </motion.h1>
           <motion.p
             className=" w-16 break-words text-sm"
-            whileInView={{ opacity: [0, 1], x: [-30, 0] }}
+            animate={{ opacity: [0, 1], x: [-30, 0] }}
             transition={{ duration: 1, ease: easeInOut, delay: 5 }}
           >
             Group Portfolio for UI/UX

@@ -3,10 +3,19 @@ import emman from "@/assets/profiles/emman.jpg";
 import francis from "@/assets/profiles/francis.jpg";
 import gideon from "@/assets/profiles/gideon.jpg";
 
+import CVJimeno from "@/assets/files/CV_Jimeno.pdf";
+import CVCarian from "@/assets/files/CV_Cari-an.pdf";
+import CVPoliran from "@/assets/files/CV_Poliran.pdf";
+import CVMagno from "@/assets/files/CV_Magno.pdf";
+
 import johnzyllCustomerJourneyMapping from "@/assets/pictures/johnzyll/customerJourneyMapping.png";
 import johnzyllUserFlow from "@/assets/pictures/johnzyll/userFlow.png";
 import johnzyllVisualUIDesign from "@/assets/pictures/johnzyll/visualUIDesign.png";
 import johnzyllFile from "@/assets/files/johnzyll.pdf";
+
+import johnzyllPersonalPic1 from "@/assets/pictures/johnzyll/personalProj/personalPic1.jpeg";
+import johnzyllPersonalPic2 from "@/assets/pictures/johnzyll/personalProj/personalPic2.png";
+import johnzyllPersonalPic3 from "@/assets/pictures/johnzyll/personalProj/personalPic3.png";
 
 import emmanCustomerJourneyMapping from "@/assets/pictures/emman/customerJourneyMapping.png";
 import emmanUserFlow from "@/assets/pictures/emman/userFlow.png";
@@ -18,6 +27,12 @@ import francisCustomerJourneyMapping from "@/assets/pictures/francis/customerJou
 import francisUserFlow from "@/assets/pictures/francis/userFlow.png";
 import francisPrototype from "@/assets/pictures/francis/prototype.png";
 
+import gideonCustomerJourneyMapping from "@/assets/pictures/gideon/customerJourneyMapping.png";
+import gideonUserFlow from "@/assets/pictures/gideon/userFlow.png";
+import gideonVisualUIDesign from "@/assets/pictures/gideon/visualUIDesign.png";
+import gideonPrototype from "@/assets/pictures/gideon/prototype.png";
+import gideonFile from "@/assets/files/emman.pdf";
+
 export const TeamData = [
   {
     id: 1,
@@ -26,6 +41,7 @@ export const TeamData = [
     about: `TypeScript extends JavaScript and improves the developer experience. It enables developers to add type safety 
       to their projects. Moreover, TypeScript provides various other features, like interfaces, type aliases, 
       abstract classes, function overloading, tuple, generics, etc.`,
+    CVFile: CVJimeno,
   },
   {
     id: 2,
@@ -38,21 +54,34 @@ export const TeamData = [
       the realms of HTML and CSS. It's been an eye-opening experience to dive into the foundations of web 
       development. I'm eager to refine my skills in crafting visually appealing and user-friendly interfaces, 
       and I'm looking forward to the creative opportunities this skillset will unlock.`,
+    CVFile: CVCarian,
   },
   {
     id: 3,
     picture: francis,
     name: "Francis Poliran",
     about: `Designer with a passion for crafting seamless user experiences. With a background in UI and UX design, 
-    I bring creativity and technical expertise to every project I undertake. Whether it's creating visually stunning 
-    interfaces or optimizing user journeys, I thrive on turning concepts into compelling digital experiences. i am 
-    eager to hone my skills to bring my vision to life!"`,
+      I bring creativity and technical expertise to every project I undertake. Whether it's creating visually stunning 
+      interfaces or optimizing user journeys, I thrive on turning concepts into compelling digital experiences. i am 
+      eager to hone my skills to bring my vision to life!"`,
+    CVFile: CVPoliran,
   },
   {
     id: 4,
     picture: gideon,
     name: "Gideon Magno",
-    about: "",
+    about: `I'm a BSIT student who enjoys making something out of technically nothing. 
+      I am an aspiring Network Administrator/Backend Developer with a passion for 
+      learning anything about networks and databases, pushing myself to overcome 
+      the challenges that comes with the said field. I am an avid fan of thinking 
+      outside the box when problem solving, coming up with lazy solutions that 
+      can make the problem a lot easier to solve. I am knowledgable in Java, C#, 
+      and Python for programming, cisco cli commands for network administration, and 
+      MySQL for database query structures and ERD construction and analysis. I'm quite
+      eager to broaden my knowledge to have a better grasp of the basics and advance
+      my skill set to further refine my skills in implementing networks and databases
+      to better suite possible opportunities that my come my way in the near future.`,
+    CVFile: CVMagno,
   },
 ];
 
@@ -62,8 +91,23 @@ export const PersonalProjects = [
     title: "Lumine",
     description:
       "Lumine is an Web Application where you can share your thoughts in life.",
-    img: "",
+    img: johnzyllPersonalPic1,
     link: "https://lum1ne.web.app/",
+  },
+  {
+    id: 1,
+    title: "Weather App",
+    description:
+      "The main purpose of this app is to view the current weather status.",
+    img: johnzyllPersonalPic2,
+    link: "https://weather-app-phi-dun.vercel.app/",
+  },
+  {
+    id: 1,
+    title: "Todo App",
+    description: "To write down what do to",
+    img: johnzyllPersonalPic3,
+    link: "https://todo-app-nu-bice.vercel.app/",
   },
 ];
 
@@ -130,6 +174,7 @@ export const CaseStudyData = [
   {
     id: 4,
     author: "Gideon Magno",
+    file: gideonFile,
     title:
       "An Online Rental Space Management System for small or family owned rental spaces.",
     summary: `OuRSpace is a proposed project aimed to help small and/or family owned rental space business to 
@@ -143,5 +188,11 @@ export const CaseStudyData = [
       excel sheet, which in my opinion takes a lot of time, and when problems arises that needs the owners to 
       backlog, some data might already be lost or inconsistencies may rise. Thus with this, managing a rental 
       space business can become easier, and data queries to be faster.`,
+    customerJourneyMapping: gideonCustomerJourneyMapping,
+    userflow: gideonUserFlow,
+    visualUIDesign: gideonVisualUIDesign,
+    prototypeType: 2,
+    prototypeDescription: "Prototype pictures",
+    prototype: gideonPrototype,
   },
 ];

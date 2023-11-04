@@ -1,5 +1,3 @@
-import background2 from "@/assets/backgrounds/background4.svg";
-
 import { Button } from "@/components/ui/button";
 
 import { Link } from "react-router-dom";
@@ -10,14 +8,8 @@ import { motion } from "framer-motion";
 const Team = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center border-b-2 h-screen p-4 gap-10"
+      className="flex flex-col w-full items-center justify-center border-b-2 h-screen p-4 gap-10 absolute"
       id="team"
-      style={{
-        backgroundImage: `url(${background2})`,
-        backgroundSize: "65em",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}
     >
       <h1 className=" text-5xl font-bold">Our Team</h1>
       <div className=" grid grid-cols-2 gap-2 md:grid-cols-4 text-sm">

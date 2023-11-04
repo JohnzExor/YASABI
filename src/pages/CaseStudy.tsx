@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { CaseStudyData } from "@/store/Data";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { Link, useParams } from "react-router-dom";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { FiDownload } from "react-icons/fi";
 import { useEffect, useRef } from "react";
 
@@ -16,7 +15,7 @@ const CaseStudy = () => {
   }, [id]);
   return (
     <div
-      className=" flex flex-col p-6 h-screen absolute w-full backdrop-blur-3xl z-10 gap-4 md:px-40 overflow-y-scroll md:pt-20"
+      className=" flex flex-col p-6 min-h-screen w-full backdrop-blur-3xl  gap-4 md:px-40  md:pt-32 border-b-2"
       ref={divRef}
       tabIndex={0}
     >
@@ -41,7 +40,7 @@ const CaseStudy = () => {
                   </Button>
                 </a>
               </div>
-              <ScrollArea className="md:w-3/4 p-2 h-screen">
+              <div className="md:w-3/4 p-2">
                 <em className="text-sm text-gray-500">*Scroll Here</em>
                 <h1 className="font-bold text-lg mb-2">
                   Customer Journey Mapping
@@ -71,7 +70,7 @@ const CaseStudy = () => {
                 {data.prototypeType === 2 && (
                   <img src={data.prototype} className="w-full rounded-md" />
                 )}
-              </ScrollArea>
+              </div>
             </div>
           )
       )}

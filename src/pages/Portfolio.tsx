@@ -25,7 +25,7 @@ const Portfolio = () => {
 
   return (
     <div
-      className=" flex flex-col p-6 h-screen absolute w-full backdrop-blur-3xl z-10 overflow-y-scroll gap-4 md:px-40 md:pt-32 md:pb-4"
+      className=" flex flex-col p-6 min-h-screen w-full backdrop-blur-3xl gap-4 md:px-40 md:pt-32 md:pb-4 border-b-2"
       ref={divRef}
       tabIndex={0}
     >
@@ -45,23 +45,25 @@ const Portfolio = () => {
                   <>
                     <h1 className=" font-semibold text-lg mt-2">About me</h1>
                     <p>{data.about}</p>
-                    <Button className=" w-fit mt-4 dark:bg-transparent dark:text-white dark:border-white border flex gap-2 items-center">
-                      <FiDownload />
-                      Download Curriculum Vitae
-                    </Button>
+                    <a href={data.CVFile} target="_blank" download={data.name}>
+                      <Button className=" w-fit mt-4 dark:bg-transparent dark:text-white dark:border-white border flex gap-2 items-center">
+                        <FiDownload />
+                        Download Curriculum Vitae
+                      </Button>
+                    </a>
                   </>
                 )}
               </div>
             )
         )}
-        <div className="w-full flex flex-col gap-4">
+        <div className="w-full flex flex-col">
+          <h1 className=" font-bold">Case Study</h1>
           {CaseStudyData.map(
             (data, index) =>
               data.id === Number(id) && (
                 <div key={index}>
                   <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
-                      <h1 className=" font-bold">Case Study</h1>
                       <AccordionTrigger className=" p-2 ">
                         {data.title}
                       </AccordionTrigger>
@@ -78,22 +80,26 @@ const Portfolio = () => {
                 </div>
               )
           )}
+          <h1 className=" font-bold">Personal Projects</h1>
           {PersonalProjects.map(
             (data, index) =>
               data.id === Number(id) && (
                 <div key={index}>
                   <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
-                      <h1 className=" font-bold">Personal Projects</h1>
                       <AccordionTrigger className=" p-2 ">
                         {data.title}
                       </AccordionTrigger>
                       <AccordionContent className="flex flex-col">
                         <p>{data.description}</p>
-                        <img src={data.img} />
-                        <a href={data.link} target="_blank">
+                        <a
+                          href={data.link}
+                          target="_blank"
+                          className="font-bold mb-2"
+                        >
                           {data.link}
                         </a>
+                        <img src={data.img} className="w-full rounded-md" />
                       </AccordionContent>
                     </AccordionItem>
                   </Accordion>
