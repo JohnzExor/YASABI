@@ -12,6 +12,11 @@ import emmanCustomerJourneyMapping from "@/assets/pictures/emman/customerJourney
 import emmanUserFlow from "@/assets/pictures/emman/userFlow.png";
 import emmanVisualUIDesign from "@/assets/pictures/emman/visualUIDesign.png";
 import emmanPrototype from "@/assets/pictures/emman/prototype.png";
+import emmanFile from "@/assets/files/emman.pdf";
+
+import francisCustomerJourneyMapping from "@/assets/pictures/francis/customerJourneyMapping.png";
+import francisUserFlow from "@/assets/pictures/francis/userFlow.png";
+import francisPrototype from "@/assets/pictures/francis/prototype.png";
 
 export const TeamData = [
   {
@@ -51,25 +56,23 @@ export const TeamData = [
   },
 ];
 
+export const PersonalProjects = [
+  {
+    id: 1,
+    title: "Lumine",
+    description:
+      "Lumine is an Web Application where you can share your thoughts in life.",
+    img: "",
+    link: "https://lum1ne.web.app/",
+  },
+];
+
 export const CaseStudyData = [
   {
     id: 1,
+    author: "Johnzyll Jimeno",
     file: johnzyllFile,
     title: `Implementation of a Comprehensive Driver Behavior Reporting System for Transportation Industry.`,
-    projectType: `The objective of this project is to create an extensive system that tracks and provides insights 
-      into the conduct of motorists in the Philippines. This system will encompass multiple facets of driver behavior, 
-      including compliance with traffic regulations, promoting road safety, and encouraging responsible driving practices. 
-      It will serve as a valuable tool for government bodies, law enforcement agencies, or private enterprises with a keen 
-      focus on fostering safe and responsible driving habits.`,
-    projectDate: `This study was undertaken as part of our coursework for the subject of System Integration and Architecture, 
-      which constitutes our final academic requirement. I dedicated the entire month of May in the current year to conducting this 
-      research and completing the project. Meanwhile, in this case study I started working this on the end of September, I estimated 
-      this to finish on October or November.`,
-    role: `I am responsible for a wide range of tasks as part of the Comprehensive Driver Behavior Reporting System project. First, 
-      I'll conduct extensive research to understand the specific needs of the transportation industry in the Philippines. 
-      In addition, I'll take the lead in designing the user interface, with a focus on making it user-friendly and intuitive. 
-      I will also be responsible for testing, documentation, project coordination, and client communication. This demonstrates 
-      my ability to work independently and manage various aspects of the project effectively.`,
     summary: `The Comprehensive Driver Reporting System project was created in response to the urgent need for a customized solution 
       in the Philippine transportation sector. It intends to address issues of road safety and defensive driving techniques by developing 
       a user-friendly interface for tracking and reporting driver behavior. The impetus for this project came from alarming national 
@@ -86,6 +89,8 @@ export const CaseStudyData = [
   },
   {
     id: 2,
+    author: "Emmanuel Cari-an",
+    file: emmanFile,
     title: "Optimization of Canvas Website’s UI to Improve User Experience",
     summary: `As of now a plethora of schools and universities use canvas to give task, provide resources, and communicate to students, the 
       interface’s learning curve should be low so that students can focus more on their task rather than having a hard time locating 
@@ -101,6 +106,7 @@ export const CaseStudyData = [
   },
   {
     id: 3,
+    author: "Francis Poliran",
     title:
       "NoteXpert: Optimizing Teacher Workflows using a Cross- Platform Class Scheduling with Note-taking system",
     summary: `The"NoteXpert" is a project focused on revolutionizing teacher workflows
@@ -115,9 +121,15 @@ export const CaseStudyData = [
       technology, other features that could be seen in this project are, class schedule
       notification, student grades calculation and attendance, and show who passed and
       failed.`,
+    customerJourneyMapping: francisCustomerJourneyMapping,
+    userflow: francisUserFlow,
+    prototypeType: 2,
+    prototypeDescription: "Prototype pictures",
+    prototype: francisPrototype,
   },
   {
     id: 4,
+    author: "Gideon Magno",
     title:
       "An Online Rental Space Management System for small or family owned rental spaces.",
     summary: `OuRSpace is a proposed project aimed to help small and/or family owned rental space business to 

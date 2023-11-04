@@ -12,7 +12,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { CaseStudyData, TeamData } from "@/store/Data";
+import { CaseStudyData, PersonalProjects, TeamData } from "@/store/Data";
 
 const Portfolio = () => {
   const divRef = useRef<HTMLDivElement | null>(null);
@@ -54,29 +54,53 @@ const Portfolio = () => {
               </div>
             )
         )}
-        {CaseStudyData.map(
-          (data, index) =>
-            data.id === Number(id) && (
-              <div className=" md:w-3/4" key={index}>
-                <Accordion type="single" collapsible>
-                  <AccordionItem value="item-1">
-                    <h1 className=" font-bold">Case Study</h1>
-                    <AccordionTrigger className=" p-2 ">
-                      {data.title}
-                    </AccordionTrigger>
-                    <AccordionContent className="flex flex-col">
-                      <p>{data.summary}</p>
-                      <Link to={`/portfolio/casestudy/${id}`}>
-                        <Button className=" w-fit mt-4 dark:bg-transparent dark:text-white dark:border-white border">
-                          See More
-                        </Button>
-                      </Link>
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
-              </div>
-            )
-        )}
+        <div className="w-full flex flex-col gap-4">
+          {CaseStudyData.map(
+            (data, index) =>
+              data.id === Number(id) && (
+                <div key={index}>
+                  <Accordion type="single" collapsible>
+                    <AccordionItem value="item-1">
+                      <h1 className=" font-bold">Case Study</h1>
+                      <AccordionTrigger className=" p-2 ">
+                        {data.title}
+                      </AccordionTrigger>
+                      <AccordionContent className="flex flex-col">
+                        <p>{data.summary}</p>
+                        <Link to={`/portfolio/casestudy/${id}`}>
+                          <Button className=" w-fit mt-4 dark:bg-transparent dark:text-white dark:border-white border">
+                            See More
+                          </Button>
+                        </Link>
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                </div>
+              )
+          )}
+          {PersonalProjects.map(
+            (data, index) =>
+              data.id === Number(id) && (
+                <div key={index}>
+                  <Accordion type="single" collapsible>
+                    <AccordionItem value="item-1">
+                      <h1 className=" font-bold">Personal Projects</h1>
+                      <AccordionTrigger className=" p-2 ">
+                        {data.title}
+                      </AccordionTrigger>
+                      <AccordionContent className="flex flex-col">
+                        <p>{data.description}</p>
+                        <img src={data.img} />
+                        <a href={data.link} target="_blank">
+                          {data.link}
+                        </a>
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                </div>
+              )
+          )}
+        </div>
       </div>
     </div>
   );

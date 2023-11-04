@@ -34,20 +34,30 @@ const CaseStudy = () => {
                 <h1 className="text-4xl font-bold ">{data.title}</h1>
                 <h1 className="font-semibold mt-2 text-lg">Summary</h1>
                 <p>{data.summary}</p>
-                <Button className=" w-fit mt-4 dark:bg-transparent dark:text-white dark:border-white border flex gap-2 items-center">
-                  <FiDownload />
-                  Download Case Study
-                </Button>
+                <a href={data.file} target="_blank" download={data.author}>
+                  <Button className=" w-fit mt-4 dark:bg-transparent dark:text-white dark:border-white border flex gap-2 items-center">
+                    <FiDownload />
+                    Download Case Study
+                  </Button>
+                </a>
               </div>
-              <ScrollArea className="md:w-3/4 p-2 h-screen gap-4">
+              <ScrollArea className="md:w-3/4 p-2 h-screen">
                 <em className="text-sm text-gray-500">*Scroll Here</em>
-                <h1 className="font-bold text-lg">Customer Journey Mapping</h1>
-                <img src={data.customerJourneyMapping} className=" w-full" />
-                <h1 className="font-bold text-lg">User Flow</h1>
-                <img src={data.userflow} className="w-full" />
-                <h1 className="font-bold text-lg">Visual UI Design</h1>
-                <img src={data.visualUIDesign} className="w-full" />
-                <h1 className="font-bold text-lg">Prototype</h1>
+                <h1 className="font-bold text-lg mb-2">
+                  Customer Journey Mapping
+                </h1>
+                <img
+                  src={data.customerJourneyMapping}
+                  className=" w-full rounded-md mb-4"
+                />
+                <h1 className="font-bold text-lg mb-2">User Flow</h1>
+                <img src={data.userflow} className="w-full rounded-md mb-4" />
+                <h1 className="font-bold text-lg mb-2">Visual UI Design</h1>
+                <img
+                  src={data.visualUIDesign}
+                  className="w-full rounded-md mb-4"
+                />
+                <h1 className="font-bold text-lg mb-2">Prototype</h1>
                 <p>{data.prototypeDescription}</p>
                 {data.prototypeType === 1 && (
                   <a
@@ -59,7 +69,7 @@ const CaseStudy = () => {
                   </a>
                 )}
                 {data.prototypeType === 2 && (
-                  <img src={data.prototype} className="w-full" />
+                  <img src={data.prototype} className="w-full rounded-md" />
                 )}
               </ScrollArea>
             </div>
