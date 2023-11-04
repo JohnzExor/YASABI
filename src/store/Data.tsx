@@ -13,9 +13,9 @@ import johnzyllUserFlow from "@/assets/pictures/johnzyll/userFlow.png";
 import johnzyllVisualUIDesign from "@/assets/pictures/johnzyll/visualUIDesign.png";
 import johnzyllFile from "@/assets/files/johnzyll.pdf";
 
-import johnzyllPersonalPic1 from "@/assets/pictures/johnzyll/personalProj/personalPic1.jpeg";
-import johnzyllPersonalPic2 from "@/assets/pictures/johnzyll/personalProj/personalPic2.png";
-import johnzyllPersonalPic3 from "@/assets/pictures/johnzyll/personalProj/personalPic3.png";
+import johnzyllPersonalPic1 from "@/assets/pictures/johnzyll/personalProj/personalpic1.jpeg";
+import johnzyllPersonalPic2 from "@/assets/pictures/johnzyll/personalProj/personalpic2.png";
+import johnzyllPersonalPic3 from "@/assets/pictures/johnzyll/personalProj/personalpic3.png";
 
 import emmanCustomerJourneyMapping from "@/assets/pictures/emman/customerJourneyMapping.png";
 import emmanUserFlow from "@/assets/pictures/emman/userFlow.png";
