@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <div className=" h-20 font-thin flex flex-col items-center justify-center w-full">
       <h1 className="font-bold">YASABI</h1>
-      <p>All rights Reserved.</p>
+      <p>All rights Reserved 2023.</p>
     </div>
   );
 };
