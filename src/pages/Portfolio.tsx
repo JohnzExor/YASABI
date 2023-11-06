@@ -12,7 +12,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { CaseStudyData, PersonalProjects, TeamData } from "@/store/Data";
+import { CaseStudyData, TeamData } from "@/store/Data";
 
 const Portfolio = () => {
   const divRef = useRef<HTMLDivElement | null>(null);
@@ -81,9 +81,10 @@ const Portfolio = () => {
               )
           )}
           <h1 className=" font-bold">Personal Projects</h1>
-          {PersonalProjects.map(
-            (data, index) =>
-              data.id === Number(id) && (
+          {TeamData.map(
+            (data) =>
+              data.id === Number(id) &&
+              data.personalProject?.map((data, index) => (
                 <div key={index}>
                   <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
@@ -99,12 +100,20 @@ const Portfolio = () => {
                         >
                           {data.link}
                         </a>
-                        <img src={data.img} className="w-full rounded-md" />
+                        <div className="flex flex-col gap-4">
+                          {data.img.map((data, index) => (
+                            <img
+                              src={data}
+                              key={index}
+                              className="w-full rounded-md"
+                            />
+                          ))}
+                        </div>
                       </AccordionContent>
                     </AccordionItem>
                   </Accordion>
                 </div>
-              )
+              ))
           )}
         </div>
       </div>

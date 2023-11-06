@@ -14,8 +14,6 @@ import johnzyllVisualUIDesign from "@/assets/pictures/johnzyll/visualUIDesign.pn
 import johnzyllFile from "@/assets/files/johnzyll.pdf";
 
 import johnzyllPersonalPic1 from "@/assets/pictures/johnzyll/personalProj/personalpic1.jpeg";
-import johnzyllPersonalPic2 from "@/assets/pictures/johnzyll/personalProj/personalpic2.png";
-import johnzyllPersonalPic3 from "@/assets/pictures/johnzyll/personalProj/personalpic3.png";
 
 import emmanCustomerJourneyMapping from "@/assets/pictures/emman/customerJourneyMapping.png";
 import emmanUserFlow from "@/assets/pictures/emman/userFlow.png";
@@ -26,6 +24,10 @@ import emmanFile from "@/assets/files/emman.pdf";
 import francisCustomerJourneyMapping from "@/assets/pictures/francis/customerJourneyMapping.png";
 import francisUserFlow from "@/assets/pictures/francis/userFlow.png";
 import francisPrototype from "@/assets/pictures/francis/prototype.png";
+
+import francisPersonalPic1 from "@/assets/pictures/francis/personalProj/personalpic1.jpg";
+import francisPersonalPic2 from "@/assets/pictures/francis/personalProj/personalpic2.jpg";
+import francisPersonalPic3 from "@/assets/pictures/francis/personalProj/personalpic3.jpg";
 
 import gideonCustomerJourneyMapping from "@/assets/pictures/gideon/customerJourneyMapping.png";
 import gideonUserFlow from "@/assets/pictures/gideon/userFlow.png";
@@ -42,6 +44,15 @@ export const TeamData = [
       to their projects. Moreover, TypeScript provides various other features, like interfaces, type aliases, 
       abstract classes, function overloading, tuple, generics, etc.`,
     CVFile: CVJimeno,
+    personalProject: [
+      {
+        title: "Lumine",
+        description:
+          "Lumine is an Web Application where you can share your thoughts in life.",
+        img: [johnzyllPersonalPic1],
+        link: "https://lum1ne.web.app/",
+      },
+    ],
   },
   {
     id: 2,
@@ -65,6 +76,20 @@ export const TeamData = [
       interfaces or optimizing user journeys, I thrive on turning concepts into compelling digital experiences. i am 
       eager to hone my skills to bring my vision to life!"`,
     CVFile: CVPoliran,
+    personalProject: [
+      {
+        title: "PSU Canteen Reservation",
+        description:
+          "Canteen Food Reservation System of Palawan State University.",
+        img: [francisPersonalPic1],
+      },
+      {
+        title: "PALCONNECT",
+        description:
+          "A Web Platform for Hiring Status of Every Company for Applicants in Palawan",
+        img: [francisPersonalPic2, francisPersonalPic3],
+      },
+    ],
   },
   {
     id: 4,
@@ -82,32 +107,6 @@ export const TeamData = [
       my skill set to further refine my skills in implementing networks and databases
       to better suite possible opportunities that my come my way in the near future.`,
     CVFile: CVMagno,
-  },
-];
-
-export const PersonalProjects = [
-  {
-    id: 1,
-    title: "Lumine",
-    description:
-      "Lumine is an Web Application where you can share your thoughts in life.",
-    img: johnzyllPersonalPic1,
-    link: "https://lum1ne.web.app/",
-  },
-  {
-    id: 1,
-    title: "Weather App",
-    description:
-      "The main purpose of this app is to view the current weather status.",
-    img: johnzyllPersonalPic2,
-    link: "https://weather-app-phi-dun.vercel.app/",
-  },
-  {
-    id: 1,
-    title: "Todo App",
-    description: "To write down what do to",
-    img: johnzyllPersonalPic3,
-    link: "https://todo-app-nu-bice.vercel.app/",
   },
 ];
 

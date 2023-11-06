@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { TeamData } from "@/store/Data";
 
-import { motion } from "framer-motion";
+import { easeOut, motion } from "framer-motion";
 
 const Team = () => {
   return (
@@ -17,9 +17,8 @@ const Team = () => {
           <motion.div
             key={index}
             className="text-center border rounded-md backdrop-blur-3xl md:w-52"
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5 }}
-            whileInView={{ opacity: [0, 1] }}
+            whileHover={{ y: -10, scale: 1.02 }}
+            transition={{ duration: 0.5, ease: easeOut }}
           >
             <img src={data.picture} className="rounded-full p-2" />
             <div className=" bg-white p-2 bg-opacity-10 h-fit">
