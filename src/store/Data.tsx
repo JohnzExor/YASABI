@@ -82,12 +82,14 @@ export const TeamData = [
         description:
           "Canteen Food Reservation System of Palawan State University.",
         img: [francisPersonalPic1],
+        link: "",
       },
       {
         title: "PALCONNECT",
         description:
           "A Web Platform for Hiring Status of Every Company for Applicants in Palawan",
         img: [francisPersonalPic2, francisPersonalPic3],
+        link: "",
       },
     ],
   },
