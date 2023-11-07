@@ -58,7 +58,7 @@ const CaseStudy = () => {
                 />
                 <h1 className="font-bold text-lg mb-2">Prototype</h1>
                 <p>{data.prototypeDescription}</p>
-                {data.prototypeType === 1 && (
+                {data.prototypeType === 1 ? (
                   <a
                     className=" underline"
                     href={data.prototype}
@@ -66,8 +66,7 @@ const CaseStudy = () => {
                   >
                     {data.prototype}
                   </a>
-                )}
-                {data.prototypeType === 2 && (
+                ) : (
                   <img src={data.prototype} className="w-full rounded-md" />
                 )}
               </div>
