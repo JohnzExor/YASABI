@@ -39,20 +39,17 @@ const Portfolio = () => {
         {TeamData.map(
           (data, index) =>
             data.id === Number(id) && (
-              <div className=" md:w-96" key={index}>
+              <div className=" md:w-96 gap-2 flex flex-col" key={index}>
                 <h1 className="text-6xl font-bold ">{data.name}</h1>
-                {data.about && (
-                  <>
-                    <h1 className=" font-semibold text-lg mt-2">About me</h1>
-                    <p>{data.about}</p>
-                    <a href={data.CVFile} target="_blank" download={data.name}>
-                      <Button className=" w-fit mt-4 dark:bg-transparent dark:text-white dark:border-white border flex gap-2 items-center">
-                        <FiDownload />
-                        Download Curriculum Vitae
-                      </Button>
-                    </a>
-                  </>
-                )}
+                <p>{data.role}</p>
+                <h1 className=" font-semibold text-lg">About me</h1>
+                <p>{data.about}</p>
+                <a href={data.CVFile} target="_blank" download={data.name}>
+                  <Button className=" w-fit mt-4 dark:bg-transparent dark:text-white dark:border-white border flex gap-2 items-center">
+                    <FiDownload />
+                    Download Curriculum Vitae
+                  </Button>
+                </a>
               </div>
             )
         )}

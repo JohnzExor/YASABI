@@ -4,12 +4,12 @@ import { Button } from "@/components/ui/button";
 const Contact = () => {
   return (
     <div
-      className=" h-screen items-center flex flex-col md:flex-row justify-center border-b-2 gap-20"
+      className=" min-h-screen items-center flex flex-col md:flex-row justify-center border-b-2 gap-20"
       id="contact"
     >
       <img src={background3} className=" absolute md:relative md:80 -z-10" />
       <div>
-        <h1 className=" text-6xl">Contact Us</h1>
+        <h1 className=" text-6xl mt-10">Contact Us</h1>
         <form className=" w-80 backdrop-blur-md p-2 rounded-md space-y-4">
           <input
             type="text"

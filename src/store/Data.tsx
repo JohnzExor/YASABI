@@ -39,6 +39,7 @@ export const TeamData = [
   {
     id: 1,
     picture: johnzyll,
+    role: "Frontend Developer",
     name: "Johnzyll Jimeno",
     about: `TypeScript extends JavaScript and improves the developer experience. It enables developers to add type safety 
       to their projects. Moreover, TypeScript provides various other features, like interfaces, type aliases, 
@@ -57,6 +58,7 @@ export const TeamData = [
   {
     id: 2,
     picture: emman,
+    role: "Software Developer",
     name: "Emmanuel Cari-an",
     about: `Greetings! I'm passionate about coding and creating digital experiences. Here's a bit about me.
       I thrive in the world of Python development. With a keen eye for detail and a love for problem-solving, 
@@ -70,6 +72,7 @@ export const TeamData = [
   {
     id: 3,
     picture: francis,
+    role: "Frontend Developer",
     name: "Francis Poliran",
     about: `Designer with a passion for crafting seamless user experiences. With a background in UI and UX design, 
       I bring creativity and technical expertise to every project I undertake. Whether it's creating visually stunning 
@@ -96,6 +99,7 @@ export const TeamData = [
   {
     id: 4,
     picture: gideon,
+    role: "Network Administrator",
     name: "Gideon Magno",
     about: `I'm a BSIT student who enjoys making something out of technically nothing. 
       I am an aspiring Network Administrator/Backend Developer with a passion for 

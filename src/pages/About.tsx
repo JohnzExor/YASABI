@@ -12,7 +12,7 @@ const About = () => {
         transition: { duration: 5, ease: easeInOut },
       }
     : {
-        animate: { opacity: [0, 1], y: [180, 180, 0], x: [30, 30, 0] },
+        animate: { opacity: [0, 1], y: [100, 100, 0], x: [30, 30, 0] },
         transition: { duration: 5, ease: easeInOut },
       };
   return (
