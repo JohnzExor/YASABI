@@ -26,6 +26,8 @@ const Sidebar = () => {
             className=" border-b pb-2"
           >
             {data.title}
+            <br />
+            <em>By: {data.author}</em>
           </Link>
         ))}
       </div>

@@ -59,6 +59,8 @@ const Header = () => {
                   <div key={index} className=" w-80  border-b-2 py-2">
                     <Link to={`/portfolio/casestudy/${data.id}`}>
                       {data.title}
+                      <br />
+                      <em>By: {data.author}</em>
                     </Link>
                   </div>
                 ))}
