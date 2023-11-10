@@ -6,6 +6,7 @@ import { ThemeProvider } from "./components/theme/Theme-Provider";
 import Portfolio from "./pages/Portfolio";
 import CaseStudy from "./pages/CaseStudy";
 import Contact from "./pages/Contact";
+import { Toaster } from "./components/ui/toaster";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       </Routes>
       <Contact />
       <Footer />
+      <Toaster />
     </ThemeProvider>
   );
 };

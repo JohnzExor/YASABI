@@ -60,8 +60,8 @@ const Portfolio = () => {
                 <h1 className="text-6xl font-bold">{data.name}</h1>
                 <p>{data.role}</p>
                 <div className=" text-2xl flex flex-row gap-1">
-                  {data.techStack?.map((tech) => (
-                    <>
+                  {data.techStack?.map((tech, index) => (
+                    <div key={index}>
                       {tech == "html" && <FaHtml5 />}
                       {tech == "css" && <FaCss3Alt />}
                       {tech == "react" && <FaReact />}
@@ -71,7 +71,7 @@ const Portfolio = () => {
                       {tech == "firebase" && <BiLogoFirebase />}
                       {tech == "python" && <BiLogoPython />}
                       {tech == "c#" && <SiCsharp />}
-                    </>
+                    </div>
                   ))}
                 </div>
 
