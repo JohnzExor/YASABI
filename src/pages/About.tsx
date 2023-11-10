@@ -8,12 +8,12 @@ const About = () => {
   const matches = useMediaQuery("(min-width: 768px)");
   const variants = matches
     ? {
-        animate: { opacity: [0, 1], x: [300, 300, 0] },
-        transition: { duration: 5, ease: easeInOut },
+        animate: { opacity: [0, 1], y: 0, x: [300, 0] },
+        transition: { duration: 2, ease: easeInOut },
       }
     : {
-        animate: { opacity: [0, 1], y: [100, 100, 0], x: [30, 30, 0] },
-        transition: { duration: 5, ease: easeInOut },
+        animate: { opacity: [0, 1], y: [150, 0], x: [30, 30, 0] },
+        transition: { duration: 2, ease: easeInOut },
       };
   return (
     <motion.div className="flex flex-col md:flex-row justify-center items-center gap-10 h-screen border-b-2">
@@ -29,7 +29,7 @@ const About = () => {
           <motion.p
             className=" w-16 break-words text-sm"
             animate={{ opacity: [0, 1], x: [-30, 0] }}
-            transition={{ duration: 1, ease: easeInOut, delay: 5 }}
+            transition={{ duration: 1, ease: easeInOut, delay: 1.5 }}
           >
             Group Portfolio for UI/UX
           </motion.p>
@@ -37,7 +37,7 @@ const About = () => {
         <motion.div
           className="flex gap-2 items-center mt-2"
           animate={{ y: [-20, 0], opacity: [0, 1] }}
-          transition={{ duration: 0.5, ease: easeInOut, delay: 5 }}
+          transition={{ duration: 0.5, ease: easeInOut, delay: 1 }}
         >
           <Button className=" dark:bg-slate-900 dark:text-white">
             <a href="#team">Our Team</a>
@@ -52,7 +52,7 @@ const About = () => {
         src={background}
         className="w-80 md:w-auto"
         animate={{ y: [10, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5, ease: easeInOut, delay: 3.5 }}
+        transition={{ duration: 0.5, ease: easeInOut, delay: 1 }}
       />
     </motion.div>
   );

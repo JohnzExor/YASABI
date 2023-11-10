@@ -40,10 +40,13 @@ export const TeamData = [
     id: 1,
     picture: johnzyll,
     role: "Frontend Developer",
+    techStack: ["react", "typescript", "javascript", "tailwind", "firebase"],
     name: "Johnzyll Jimeno",
-    about: `TypeScript extends JavaScript and improves the developer experience. It enables developers to add type safety 
-      to their projects. Moreover, TypeScript provides various other features, like interfaces, type aliases, 
-      abstract classes, function overloading, tuple, generics, etc.`,
+    about: `Greetings! I'm Johnzyll Jimeno, an avid front-end development learner with a keen interest in 
+          mastering the intricacies of coding. Outside the realm of web development, you'll often find me immersed 
+          in the exciting world of video games. Beyond front-end, I'm also dedicated to expanding my expertise in 
+          back-end development. Welcome to my portfolio, where my passion for coding and digital exploration takes 
+          center stage!`,
     CVFile: CVJimeno,
     personalProject: [
       {
@@ -59,6 +62,7 @@ export const TeamData = [
     id: 2,
     picture: emman,
     role: "Software Developer",
+    techStack: ["python", "html", "css", "c#"],
     name: "Emmanuel Cari-an",
     about: `Greetings! I'm passionate about coding and creating digital experiences. Here's a bit about me.
       I thrive in the world of Python development. With a keen eye for detail and a love for problem-solving, 
@@ -120,6 +124,7 @@ export const CaseStudyData = [
   {
     id: 1,
     author: "Johnzyll Jimeno",
+    updatedAt: "10-11-2023",
     file: johnzyllFile,
     title: `Implementation of a Comprehensive Driver Behavior Reporting System for Transportation Industry.`,
     summary: `The Comprehensive Driver Reporting System project was created in response to the urgent need for a customized solution 
@@ -139,6 +144,8 @@ export const CaseStudyData = [
   {
     id: 2,
     author: "Emmanuel Cari-an",
+    updatedAt: "10-11-2023",
+
     file: emmanFile,
     title: "Optimization of Canvas Website’s UI to Improve User Experience",
     summary: `As of now a plethora of schools and universities use canvas to give task, provide resources, and communicate to students, the 
@@ -156,6 +163,8 @@ export const CaseStudyData = [
   {
     id: 3,
     author: "Francis Poliran",
+    updatedAt: "10-11-2023",
+
     title:
       "NoteXpert: Optimizing Teacher Workflows using a Cross- Platform Class Scheduling with Note-taking system",
     summary: `The"NoteXpert" is a project focused on revolutionizing teacher workflows
@@ -179,6 +188,7 @@ export const CaseStudyData = [
   {
     id: 4,
     author: "Gideon Magno",
+    updatedAt: "10-11-2023",
     file: gideonFile,
     title:
       "An Online Rental Space Management System for small or family owned rental spaces.",

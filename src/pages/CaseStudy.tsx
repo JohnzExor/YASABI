@@ -29,46 +29,60 @@ const CaseStudy = () => {
         (data, index) =>
           data.id === Number(id) && (
             <div className=" flex flex-col gap-4 md:flex-row" key={index}>
-              <div className=" md:w-96">
+              <div className=" md:w-96 flex flex-col gap-4">
                 <h1 className="text-4xl font-bold ">{data.title}</h1>
-                <h1 className="font-semibold mt-2 text-lg">Summary</h1>
-                <p>{data.summary}</p>
+                <p>
+                  Author: <span>{data.author}</span>
+                  <br />
+                  Last Update: <span>{data.updatedAt}</span>
+                </p>
                 <a href={data.file} target="_blank" download={data.author}>
-                  <Button className=" w-fit mt-4 dark:bg-transparent dark:text-white dark:border-white border flex gap-2 items-center">
+                  <Button className=" w-fit dark:bg-transparent dark:text-white dark:border-white border flex gap-2 items-center">
                     <FiDownload />
                     Download Case Study
                   </Button>
                 </a>
               </div>
-              <div className="md:w-3/4 p-2">
-                <em className="text-sm text-gray-500">*Scroll Here</em>
-                <h1 className="font-bold text-lg mb-2">
-                  Customer Journey Mapping
-                </h1>
-                <img
-                  src={data.customerJourneyMapping}
-                  className=" w-full rounded-md mb-4"
-                />
-                <h1 className="font-bold text-lg mb-2">User Flow</h1>
-                <img src={data.userflow} className="w-full rounded-md mb-4" />
-                <h1 className="font-bold text-lg mb-2">Visual UI Design</h1>
-                <img
-                  src={data.visualUIDesign}
-                  className="w-full rounded-md mb-4"
-                />
-                <h1 className="font-bold text-lg mb-2">Prototype</h1>
-                <p>{data.prototypeDescription}</p>
-                {data.prototypeType === 1 ? (
-                  <a
-                    className=" underline"
-                    href={data.prototype}
-                    target="_blank"
-                  >
-                    {data.prototype}
-                  </a>
-                ) : (
-                  <img src={data.prototype} className="w-full rounded-md" />
-                )}
+              <div className="md:w-full p-2 md:grid md:grid-cols-2 gap-4">
+                <div>
+                  <h1 className="font-bold mt-2 text-lg">Summary</h1>
+                  <p>{data.summary}</p>
+                </div>
+                <div>
+                  <h1 className="font-bold text-lg mb-2">
+                    Customer Journey Mapping
+                  </h1>
+                  <img
+                    src={data.customerJourneyMapping}
+                    className=" w-full rounded-md mb-4"
+                  />
+                </div>
+                <div>
+                  <h1 className="font-bold text-lg mb-2">User Flow</h1>
+                  <img src={data.userflow} className="w-full rounded-md mb-4" />
+                </div>
+                <div>
+                  <h1 className="font-bold text-lg mb-2">Visual UI Design</h1>
+                  <img
+                    src={data.visualUIDesign}
+                    className="w-full rounded-md mb-4"
+                  />
+                </div>
+                <div>
+                  <h1 className="font-bold text-lg mb-2">Prototype</h1>
+                  <p>{data.prototypeDescription}</p>
+                  {data.prototypeType === 1 ? (
+                    <a
+                      className=" underline"
+                      href={data.prototype}
+                      target="_blank"
+                    >
+                      {data.prototype}
+                    </a>
+                  ) : (
+                    <img src={data.prototype} className="w-full rounded-md" />
+                  )}
+                </div>
               </div>
             </div>
           )

@@ -13,6 +13,16 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { CaseStudyData, TeamData } from "@/store/Data";
+import { FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa6";
+import {
+  BiLogoFirebase,
+  BiLogoJavascript,
+  BiLogoPython,
+  BiLogoTailwindCss,
+  BiLogoTypescript,
+} from "react-icons/bi";
+
+import { SiCsharp } from "react-icons/si";
 
 const Portfolio = () => {
   const divRef = useRef<HTMLDivElement | null>(null);
@@ -35,13 +45,36 @@ const Portfolio = () => {
           Home
         </Button>
       </Link>
-      <div className="flex flex-col md:flex-row gap-4">
+      <div className="flex flex-col md:flex-row gap-10">
         {TeamData.map(
           (data, index) =>
             data.id === Number(id) && (
-              <div className=" md:w-96 gap-2 flex flex-col" key={index}>
-                <h1 className="text-6xl font-bold ">{data.name}</h1>
+              <div
+                className=" gap-2 flex flex-col md:items-end md:w-2/3"
+                key={index}
+              >
+                <img
+                  src={data.picture}
+                  className="rounded-full p-2 md:w-52 shadow-2xl"
+                />
+                <h1 className="text-6xl font-bold">{data.name}</h1>
                 <p>{data.role}</p>
+                <div className=" text-2xl flex flex-row gap-1">
+                  {data.techStack?.map((tech) => (
+                    <>
+                      {tech == "html" && <FaHtml5 />}
+                      {tech == "css" && <FaCss3Alt />}
+                      {tech == "react" && <FaReact />}
+                      {tech == "tailwind" && <BiLogoTailwindCss />}
+                      {tech == "javascript" && <BiLogoJavascript />}
+                      {tech == "typescript" && <BiLogoTypescript />}
+                      {tech == "firebase" && <BiLogoFirebase />}
+                      {tech == "python" && <BiLogoPython />}
+                      {tech == "c#" && <SiCsharp />}
+                    </>
+                  ))}
+                </div>
+
                 <h1 className=" font-semibold text-lg">About me</h1>
                 <p>{data.about}</p>
                 <a href={data.CVFile} target="_blank" download={data.name}>
