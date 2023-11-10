@@ -53,12 +53,17 @@ const Contact = () => {
   };
   return (
     <div
-      className=" h-fit m-4 items-center flex flex-col md:flex-row justify-center border-b-2 gap-20"
+      className=" h-fit p-4 items-center flex flex-col md:flex-row justify-center border-b-2 gap-20"
       id="contact"
     >
-      <img src={background3} className=" absolute md:relative md:80 -z-10" />
+      <img
+        src={background3}
+        className=" absolute md:relative w-2/3 md:w-1/4 -z-10"
+      />
       <div>
-        <h1 className=" text-6xl mt-10">Contact Us</h1>
+        <h1 className=" text-3xl mt-10 text-center font-bold mb-4">
+          Contact Us
+        </h1>
         <form
           ref={formRef}
           id="myForm"
@@ -68,18 +73,18 @@ const Contact = () => {
           <input
             type="text"
             placeholder="User name"
-            className=" w-full p-4 bg-transparent border placeholder:text-black dark:placeholder:text-white"
+            className=" w-full p-4 bg-transparent border placeholder:text-black dark:placeholder:text-white rounded-md"
             name="user_name"
           />
           <input
             type="email"
             placeholder="Enter your email address"
-            className=" w-full p-4 bg-transparent border placeholder:text-black dark:placeholder:text-white"
+            className=" w-full p-4 bg-transparent border placeholder:text-black dark:placeholder:text-white rounded-md"
             name="user_email"
           />
           <textarea
             placeholder="Send a Message"
-            className=" w-full p-4 bg-transparent border placeholder:text-black h-32 dark:placeholder:text-white"
+            className=" w-full p-4 bg-transparent border placeholder:text-black h-32 dark:placeholder:text-white rounded-md"
             name="message"
           />
           <Button
